@@ -9,8 +9,10 @@ function Services() {
     <div class="containerValores" id="valores">
       <div class="services">
         <div style={{ marginTop: "20px" }}>
-          <h2 class="service-title color">Los valores</h2>
-          <h2 class="service-title">que impartimos en </h2>
+          <h2 class="service-title color" style={{ fontSize: 40 }}>
+            Los valores
+          </h2>
+          <h2 class="service-title"> que impartimos en </h2>
           <h2 class="service-title color">las terapias</h2>
         </div>
         <div class="center">

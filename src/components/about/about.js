@@ -19,13 +19,13 @@ function About() {
             <p class="inner__text">
               Dentro de la modalidad presencial, las terapias podrán ser
               impartidas en distintos puntos de Madrid, si quieres más
-              información os animamos a contactar con nosotras :)
+              información os animamos a contactar con nosotras.
             </p>
           </div>
         </div>
         <div class="cards-grid">
           <div class="card">
-            <Infantil style={{ width: "100%", height: "50%" }}></Infantil>
+            <Infantil style={{ width: "100%", height: "40%" }}></Infantil>
             <div class="card__body">
               <h4 class="card__head">Terapia Infantil</h4>
               <p class="card__content">
@@ -35,7 +35,7 @@ function About() {
             </div>
           </div>
           <div class="card">
-            <Family style={{ width: "100%", height: "50%" }}></Family>
+            <Family style={{ width: "100%", height: "40%" }}></Family>
             <div class="card__body">
               <h4 class="card__head">Terapia Familiar</h4>
               <p class="card__content">
@@ -46,7 +46,7 @@ function About() {
             </div>
           </div>
           <div class="card">
-            <Preja style={{ width: "100%", height: "50%" }}></Preja>
+            <Preja style={{ width: "100%", height: "40%" }}></Preja>
             <div class="card__body">
               <h4 class="card__head">Terapia Pareja</h4>
               <p class="card__content">
@@ -58,7 +58,7 @@ function About() {
             </div>
           </div>
           <div class="card">
-            <Juvenil style={{ width: "100%", height: "50%" }}></Juvenil>
+            <Juvenil style={{ width: "100%", height: "40%" }}></Juvenil>
             <div class="card__body">
               <h4 class="card__head">Terapia Adolescentes</h4>
               <p class="card__content">
@@ -69,7 +69,7 @@ function About() {
             </div>
           </div>
           <div class="card">
-            <Adultos style={{ width: "100%", height: "50%" }}></Adultos>
+            <Adultos style={{ width: "100%", height: "40%" }}></Adultos>
             <div class="card__body">
               <h4 class="card__head">Terapia Adultos</h4>
               <p class="card__content">
