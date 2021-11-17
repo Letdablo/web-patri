@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+$base-color: #909a7f;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.circle {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-title {
+  width: 100%;
+  color: #555555;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.color {
+  color: $base-color !important;
+}
+
+.services {
+  padding-bottom: 50px;
+  width: 100%;
+  max-width: calc(100% - 30%);
+  flex-wrap: wrap;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 35px 35px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+}
+
+@media (max-width: 1200px) {
+  .services {
+    padding-bottom: 150px;
+    width: 100%;
+    max-width: calc(100% - 30%);
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 35px 35px;
+    grid-template-areas:
+      ". . "
+      ". . "
+      ". . ";
+  }
+}
+
+@media (max-width: 800px) {
+  .services {
+    padding-bottom: 70px;
+    width: 100%;
+    max-width: calc(100% - 30%);
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 35px 35px;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+  }
+}
+
+.center {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-service {
+  margin-top: 20px;
+  margin-left: 10%;
+  width: 80%;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1rem;
+  color: lightslategray;
+}
