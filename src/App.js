@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import About from "./components/about/about";
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
@@ -5,15 +6,62 @@ import Home from "./components/home/home";
 import Services from "./components/services/services";
 
 function App() {
+  if (window.location.href.includes("success"))
+    return (
+      <Fragment>
+        <Header></Header>
+        <h1 class="service-title" style={{ margin: 50, marginTop: 100 }}>
+          Pago realizado con exito :)
+        </h1>
+        ;
+      </Fragment>
+    );
+  if (window.location.href.includes("cancel"))
+    return (
+      <Fragment>
+        <Header></Header>
+        <h1 class="service-title" style={{ margin: 50, marginTop: 100 }}>
+          El pago no se ha podido efectuar
+        </h1>
+        ;
+      </Fragment>
+    );
   return (
-    <div>
+    <Fragment>
+      <div
+        style={{
+          marginTop: "-10%",
+        }}
+        class="backgroundImg"
+      ></div>
+      <div
+        id="home"
+        style={{
+          marginRight: "10%",
+          marginLeft: "10%",
+          marginTop: "-30%",
+          marginBottom: "30%",
+        }}
+      >
+        <h1 className="home-name" style={{}}>
+          Bienvenido a Tu Raíz
+        </h1>
+        <div className="home-name-italic">
+          <span>
+            {" "}
+            "No puedes cambiar el viento, pero puedes ajustar las velas para
+            alcanzar tu destino"
+          </span>
+        </div>
+      </div>
+
       <Header></Header>
 
-      <About></About>
-      <Services></Services>
       <Home></Home>
+      <Services></Services>
+      <About></About>
       <Footer></Footer>
-    </div>
+    </Fragment>
   );
 }
 

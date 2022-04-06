@@ -1,6 +1,6 @@
 $base-color: #909a7f;
 .svg {
-  height: 23rem;
+  height: 18rem;
   margin-right: 2rem;
 }
 
@@ -77,6 +77,11 @@ div {
 
     &.thick {
       height: 3.3rem;
+      width: 100%;
+    }
+
+    &.thickTa {
+      width: 100% !important;
     }
 
     &:focus {

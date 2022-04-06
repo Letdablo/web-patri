@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TuRaiz",
+  "name": "Tu raiz psicología",
+  "description":"Bienvenido a tu raíz psicología. Este espacio está enfocado y dedicado para ti. Recupera tu bienestar junto a nosotras y vuelve a quererte. Somos especialistas en psicología infanto-juvenil, parejas, familia y adultos.", 
   "icons": [
     {
       "src": "favicon.ico",

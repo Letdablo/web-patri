@@ -114,6 +114,7 @@ li {
 }
 .linkContainer {
   float: right;
+  margin-right: 70px;
 }
 .cool-link::before {
   content: "";
@@ -236,8 +237,8 @@ li {
 @media screen and (max-width: 980px) {
   .main {
     flex: 70% !important;
-    padding: 5%;
-    margin-bottom: 100px;
+    margin-bottom: 5%;
+    padding-top: 0;
   }
   .wrapper .menu-icon {
     display: block;
@@ -301,7 +302,7 @@ li {
 }
 
 .logoLoto {
-  left: 300px;
-  top: -2px;
+  left: 100px;
+  top: -200px;
   position: absolute;
 }

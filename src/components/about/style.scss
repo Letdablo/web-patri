@@ -54,6 +54,7 @@ $base-color: #909a7f;
 }
 
 .card {
+  cursor: pointer;
   border-radius: 6px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border: solid 1px rgba(129, 147, 174, 0.12);
@@ -61,7 +62,27 @@ $base-color: #909a7f;
   padding: 1.5em;
   text-align: center;
   position: relative;
-  max-height: 500px;
+  max-height: 570px;
+}
+
+@media (max-width: 650px) {
+  .card {
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border: solid 1px rgba(129, 147, 174, 0.12);
+    background-color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    position: relative;
+    max-height: 620px !important;
+  }
+}
+.gridButtons {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 5%;
 }
 
 .card::before {
@@ -135,4 +156,17 @@ $base-color: #909a7f;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 50px;
+}
+
+.fadeup {
+  transform: translateY(100px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.in-view {
+  transform: none;
+  opacity: 1;
 }

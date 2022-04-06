@@ -4,7 +4,32 @@ import { ReactComponent as Yoga } from "../../img/yoga.svg";
 import { ReactComponent as Pasion } from "../../img/pasion.svg";
 import { ReactComponent as Honestidad } from "../../img/honestidad.svg";
 import { ReactComponent as Mejora } from "../../img/mejora.svg";
+
+const observerOptions = {
+  root: null,
+  threshold: 0,
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("in-view");
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
 function Services() {
+  window.addEventListener("DOMContentLoaded", (event) => {
+    const sections = Array.from(
+      document.getElementsByClassName("circle fadeupSvg")
+    );
+
+    for (let section of sections) {
+      observer.observe(section);
+    }
+  });
+
   return (
     <div class="containerValores" id="valores">
       <div class="services">
@@ -12,11 +37,10 @@ function Services() {
           <h2 class="service-title color" style={{ fontSize: 40 }}>
             Los valores
           </h2>
-          <h2 class="service-title"> que impartimos en </h2>
-          <h2 class="service-title color">las terapias</h2>
+          <h2 class="service-title"> que impartimos en las terapias </h2>
         </div>
         <div class="center">
-          <div class="circle">
+          <div class="circle fadeupSvg">
             {" "}
             <Yoga></Yoga>
           </div>
@@ -30,7 +54,7 @@ function Services() {
           </div>
         </div>
         <div class="center">
-          <div class="circle">
+          <div class="circle fadeupSvg">
             {" "}
             <Salud></Salud>
           </div>
@@ -44,7 +68,7 @@ function Services() {
           </div>
         </div>
         <div class="center">
-          <div class="circle">
+          <div class="circle fadeupSvg">
             {" "}
             <Pasion></Pasion>
           </div>
@@ -58,7 +82,7 @@ function Services() {
           </div>
         </div>
         <div class="center">
-          <div class="circle">
+          <div class="circle fadeupSvg">
             {" "}
             <Honestidad></Honestidad>
           </div>
@@ -72,7 +96,7 @@ function Services() {
           </div>
         </div>
         <div class="center">
-          <div class="circle">
+          <div class="circle fadeupSvg">
             {" "}
             <Mejora></Mejora>
           </div>
