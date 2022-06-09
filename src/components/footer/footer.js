@@ -797,7 +797,7 @@ function Footer() {
         </g>
   </svg>*/}
 
-      <div style={{ width: "33%", minWidth: 360, padding: 10 }}>
+      <div style={{ width: "70%", minWidth: 360, padding: 10 }}>
         <iframe
           title="Psicología tu raíz"
           width="100%"
@@ -806,7 +806,7 @@ function Footer() {
         ></iframe>
       </div>
 
-      <div style={{ margin: "10px", width: "33%", minWidth: 360 }}>
+      <div style={{ margin: "10px", width: "50%", minWidth: 360 }}>
         <h1 class="title" style={{ marginLeft: 14 }}>
           Escríbenos
         </h1>
@@ -858,7 +858,7 @@ function Footer() {
         <div
           class="hero_btn wow fadeInLeft"
           data-wow-delay="0.6s"
-          style={{ margin: "10px", minWidth: 360, width: "33%" }}
+          style={{ margin: "10px", minWidth: 360, width: "32%" }}
         >
           {!mailSend && (
             <div class="box-3">
@@ -869,9 +869,14 @@ function Footer() {
           )}
         </div>{" "}
       </div>
-
+      <br></br>
       <div
-        style={{ margin: "10px", minWidth: 360, width: "33%", marginLeft: 28 }}
+        style={{
+          margin: "10px",
+          minWidth: 360,
+          width: "10%",
+          marginLeft: "50px",
+        }}
       >
         <div class="con_info_wrap">
           <h1 class="title" style={{ marginBottom: 20 }}>

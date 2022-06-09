@@ -1,5 +1,9 @@
 import { Fragment } from "react";
 import About from "./components/about/about";
+import AboutHome from "./components/about/aboutHome";
+import AboutNutricion from "./components/about/aboutNutricion";
+import AboutTalleres from "./components/about/aboutTalleres";
+import AboutTienda from "./components/about/aboutTienda";
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import Home from "./components/home/home";
@@ -24,6 +28,35 @@ function App() {
           El pago no se ha podido efectuar
         </h1>
         ;
+      </Fragment>
+    );
+  if (window.location.href.includes("/psicologia"))
+    return (
+      <Fragment>
+        <Header></Header>
+        <About></About>;
+      </Fragment>
+    );
+  if (window.location.href.includes("/talleres"))
+    return (
+      <Fragment>
+        <Header></Header>
+        <AboutTalleres></AboutTalleres>;
+      </Fragment>
+    );
+  if (window.location.href.includes("/nutricion"))
+    return (
+      <Fragment>
+        <Header></Header>
+        <AboutNutricion></AboutNutricion> ;
+      </Fragment>
+    );
+
+  if (window.location.href.includes("/tienda"))
+    return (
+      <Fragment>
+        <Header></Header>
+        <AboutTienda></AboutTienda> ;
       </Fragment>
     );
   return (
@@ -59,7 +92,7 @@ function App() {
 
       <Home></Home>
       <Services></Services>
-      <About></About>
+      <AboutHome></AboutHome>
       <Footer></Footer>
     </Fragment>
   );

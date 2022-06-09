@@ -44,6 +44,12 @@ $base-color: #909a7f;
   color: lightslategray;
 }
 
+.inner__text2 {
+  text-align: left;
+  font-size: 1.4rem;
+  color: lightslategray;
+}
+
 /*====== cards style ==========*/
 
 .cards-grid {
@@ -51,6 +57,37 @@ $base-color: #909a7f;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 4em 2rem;
+}
+
+.cards-grid-tienda {
+  width: 100%;
+  max-height: 400px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 4em 2rem;
+ 
+}
+
+.card-tienda{
+  cursor: pointer;
+  float: left;
+
+  background-color: #fff;
+  padding: 0.5em;
+  text-align: center;
+  position: relative;
+
+}
+.card-descripcion-tienda{
+
+  float: left;
+  min-width: 250px;
+  background-color: #fff;
+  padding: 0.5em;
+  margin-bottom: 50px;
+  position: relative;
+
 }
 
 .card {
@@ -64,6 +101,62 @@ $base-color: #909a7f;
   position: relative;
   max-height: 570px;
 }
+.card2 {
+  cursor: pointer;
+  border-radius: 6px;
+
+  background-color: #fff;
+  padding: 1.5em;
+
+  position: relative;
+
+
+}
+
+  
+.inner2 {
+  padding: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 70%;
+}
+
+@media (max-width: 900px) {
+  .card {
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border: solid 1px rgba(129, 147, 174, 0.12);
+    background-color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    position: relative;
+    max-height: 620px !important;
+
+  }
+  .card2 {
+    cursor: pointer;
+    border-radius: 6px;
+
+    background-color: #fff;
+    padding: 1.5em;
+   
+    position: relative;
+
+  }
+
+    
+.inner2 {
+  padding: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+width: 100% !important;
+}
+}
+
+
 
 @media (max-width: 650px) {
   .card {
@@ -76,7 +169,9 @@ $base-color: #909a7f;
     text-align: center;
     position: relative;
     max-height: 620px !important;
+
   }
+  
 }
 .gridButtons {
   margin: 5%;
@@ -121,6 +216,26 @@ $base-color: #909a7f;
     grid-gap: 4em 2rem;
   }
 
+
+  .card-descripcion-tienda{
+
+    float: left;
+    min-width: 250px;
+    background-color: #fff;
+    padding: 0.5em;
+    margin-bottom: 50px;
+    position: relative;
+  
+  }
+
+  .cards-grid-tienda {
+    width: 100%;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-gap: 4em 2rem;
+  }
+
   .inner {
     padding: 1em 0;
     display: flex;
@@ -128,6 +243,8 @@ $base-color: #909a7f;
     align-items: center;
     width: 100%;
   }
+  
+
 
   .inner__sub {
     color: $base-color;

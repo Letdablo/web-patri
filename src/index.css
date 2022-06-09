@@ -23,3 +23,15 @@ code {
 
   padding-top: 58%;
 }
+
+.fotoBolsa {
+
+  background: url(./img/Totebag.jpeg) no-repeat center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 100%;
+
+  padding-top: 78%;
+}

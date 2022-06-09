@@ -96,7 +96,7 @@ $base-color: #909a7f;
   color: white;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .home-name-italic {
     font-size: 1em;
     font-style: italic;
@@ -110,6 +110,14 @@ $base-color: #909a7f;
     margin-top: -48%;
     margin-left: 12%;
     color: white;
+  }
+  .logoLoto {
+    position: absolute;
+    position: absolute;
+    top: -125px  !important;
+
+    left: -400px !important;
+  
   }
 }
 @media screen and (max-width: 580px) {
@@ -126,6 +134,42 @@ $base-color: #909a7f;
     margin-top: -42%;
     margin-left: 10%;
     color: white;
+  }
+
+  .logoLoto {
+    position: absolute;
+    position: absolute;
+    top: -135px  !important;
+
+    left: -300px !important;
+  
+  
+  }
+}
+@media screen and (max-width: 450px) {
+  .home-name-italic {
+    font-size: 0vw;
+    font-style: italic;
+    margin-bottom: 40%;
+    margin-left: 12%;
+    color: white;
+  }
+  .home-name {
+    font-size: 1.6em;
+    font-style: italic;
+    margin-top: -42%;
+    margin-left: 10%;
+    color: white;
+  }
+
+  .logoLoto {
+    position: absolute;
+    position: absolute;
+    top: -135px  !important;
+
+    left: -200px !important;
+  
+  
   }
 }
 
@@ -162,8 +206,9 @@ $base-color: #909a7f;
   position: absolute;
   position: absolute;
   top: -125px;
-  left: 0px;
-  margin-left: -10%;
+  left: 50px;
+
+
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -207,6 +252,7 @@ div[class*="box"] {
 
 .text-btn {
   color: $base-color;
+  font-size: 16px;
 }
 .btn-three {
   transition: all 0.5s;

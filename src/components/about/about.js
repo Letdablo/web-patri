@@ -4,7 +4,6 @@ import { ReactComponent as Juvenil } from "../../img/juvenil.svg";
 import { ReactComponent as Preja } from "../../img/pareja.svg";
 import { ReactComponent as Infantil } from "../../img/infantil.svg";
 import { ReactComponent as Adultos } from "../../img/adultos.svg";
-import { ReactComponent as Supervision } from "../../img/supervision.svg";
 
 import { loadStripe } from "@stripe/stripe-js";
 
@@ -212,25 +211,6 @@ function About() {
                     <span class="text-btn">Bono</span>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="card fadeup" id="Supervisiones">
-            <Supervision style={{ width: "100%", height: "40%" }}></Supervision>
-            <div class="card__body">
-              <h4 class="card__head">Supervisión</h4>
-              <p class="card__content">
-                Se trata de unos grupos de supervisión estáticos, de máximo
-                cinco personas, en los cuales tendrás nuevas herramientas,
-                enfoques e intentaremos darte luz en todo lo que podamos.
-              </p>
-
-              <div
-                class="btn btn-three"
-                style={{ width: "100%", marginTop: 20 }}
-                onClick={() => handlerClick("supervision", true)}
-              >
-                <span class="text-btn"> Reservar</span>
               </div>
             </div>
           </div>
