@@ -19,9 +19,9 @@ function Header() {
           <ul class="menu-items">
             <li>
               <a
-                title="Home"
-                href="https://turaizpsicologia.com#main"
-                class="nav-link cool-link selected"
+                title="home"
+                href="https://turaizpsicologia.com#home"
+                class="nav-link cool-link"
               >
                 Home
               </a>

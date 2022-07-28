@@ -797,7 +797,7 @@ function Footer() {
         </g>
   </svg>*/}
 
-      <div style={{ width: "70%", minWidth: 360, padding: 10 }}>
+      <div style={{ width: "80%", minWidth: 360, padding: 10 }}>
         <iframe
           title="Psicología tu raíz"
           width="100%"
@@ -806,9 +806,9 @@ function Footer() {
         ></iframe>
       </div>
 
-      <div style={{ margin: "10px", width: "50%", minWidth: 360 }}>
+      <div style={{ margin: "10px", width: "55%", minWidth: 360 }}>
         <h1 class="title" style={{ marginLeft: 14 }}>
-          Escríbenos
+          Contacta
         </h1>
         <div class="form-group position-relative">
           <label for="formName" class="d-block">

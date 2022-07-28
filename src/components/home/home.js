@@ -83,12 +83,17 @@ function Home() {
           </h4>
         </div>
       </div>
-
-      <div class="home home-fisrt ">
+      <div class="home home-fisrt" id="home">
         <h2 class="home-title" data-wow-delay="0.4s">
-          Quienes somos
+          Nuestro Equipo
         </h2>
-
+        <h4 class="home-secondary-title-modal" data-wow-delay="0.5s">
+          Siempre me interesó poder llegar a comprender por qué las personas nos
+          comportamos de distintas maneras, y eso me llevó a formarme como
+          psicóloga clínica y sexóloga. Para mí es un placer poder acompañar a
+          las personas en momentos de dificultad y mejora, potenciando al máximo
+          sus capacidades.
+        </h4>
         <div class="main center cursor user">
           <img
             src={patri}

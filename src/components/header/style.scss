@@ -121,7 +121,7 @@ li {
   display: block;
   width: 2px;
   height: 2px;
-  background: $base-color;
+ // background: $base-color;
   transition: width 0.3s;
 }
 
@@ -354,7 +354,7 @@ li {
 }
 
 .menu-items a:hover {
-  color: #117964;
+  color: black;
   transition: color 0.3s ease-in-out;
 }
 

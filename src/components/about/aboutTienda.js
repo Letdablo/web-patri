@@ -28,7 +28,7 @@ function AboutTienda() {
   });
 
   const handlerClick = async () => {
-    let price = "price_1L8i0BJViAryizK2mwoXYkwp";
+    let price = "price_1L8i97JViAryizK2TvDYg9ls";
 
     const stripe = await loadStripe(
       "pk_live_51K9SLSJViAryizK2JDdKmrhcERn1kfwZ7IoyUJmhktmq7FMuDzBXqjSqtzK6bFStQM33QNT96LxL0UuGtAjQRGA200m4kVctR2"

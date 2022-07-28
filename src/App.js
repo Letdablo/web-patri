@@ -8,6 +8,7 @@ import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import Home from "./components/home/home";
 import Services from "./components/services/services";
+import FeedInstagram from "./components/feed/feedInstagram";
 
 function App() {
   if (window.location.href.includes("success"))
@@ -61,7 +62,7 @@ function App() {
     );
   return (
     <Fragment>
-      <div
+      {/*  <div
         style={{
           marginTop: "-10%",
         }}
@@ -86,13 +87,14 @@ function App() {
             alcanzar tu destino"
           </span>
         </div>
-      </div>
+      </div> */}
 
       <Header></Header>
 
       <Home></Home>
       <Services></Services>
       <AboutHome></AboutHome>
+      <FeedInstagram></FeedInstagram>
       <Footer></Footer>
     </Fragment>
   );
